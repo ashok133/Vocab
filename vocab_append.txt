@@ -1,0 +1,22 @@
+(dp0
+S'SOLIPSISM'
+p1
+S'The quality of being self-centered and selfish'
+p2
+sS'BELEAGUERED'
+p3
+S'Put in a very difficult situation'
+p4
+sS'LOQUACIOUS'
+p5
+S'Tending to talk a lot, talkative'
+p6
+sS'SERMONIZING'
+p7
+S'Deliver an opinionated and dogmatic talk'
+p8
+sS'COMATOSE'
+p9
+S'State of deep unconsciousness'
+p10
+s.
