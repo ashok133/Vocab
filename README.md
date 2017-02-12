@@ -1,5 +1,5 @@
 # Vocab
-A simple Python script to help me add and memorise English words and their meanings through quiz, with data stored locally.
+A simple Python CLI to help me add and memorise English words and their meanings through quiz, with data scraped from an online resource and stored locally.
 
 ## What can it do?
 * Scrape for frequent words as found on www.majortests.com
