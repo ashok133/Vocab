@@ -4,6 +4,7 @@ A simple Python CLI to help me add and memorise English words and their meanings
 ## What can it do?
 * Scrape for frequent words as found on www.majortests.com
 * Merge scraped words and meanings to readable CSV
+* Send daily SMS, mail notifications with new words and a Goodreads quote 
 * Add words
 * Search for words
 * Run a quiz
