@@ -15,5 +15,9 @@ One particularly useful resource was http://www.majortests.com/gre/. They have a
 
 BeautifulSoup came to my rescue. I scraped through the website and extracted the word lists by writing a script (scraping_list.py). After extracting the 15 lists from 15 separate web pages, I merged and exported them into a single CSV file (final_list.csv)
 
+I've also made use of Synch and Twilio, as well as smtplib for daily notifications (SMS, mail) with new words and a quote from Goodreads.
+
+Github doesn't allow more than a 100 files to be uploaded at once. Meh. Complete code - bit.ly/vocab_apk
+
 Python makes lives a little more easier.
 
