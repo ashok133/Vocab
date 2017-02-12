@@ -2,6 +2,8 @@
 A simple Python script to help me add and memorise English words and their meanings through quiz, with data stored locally.
 
 ## What can it do?
+* Scrape for frequent words as found on www.majortests.com
+* Merge scraped words and meanings to readable CSV
 * Add words
 * Search for words
 * Run a quiz
