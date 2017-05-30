@@ -1,0 +1,52 @@
+from __future__ import unicode_literals
+from bs4 import BeautifulSoup
+import urllib2
+import re
+import unicodecsv as csv
+
+crunchprep = "https://crunchprep.com/gre/2014/101-high-frequency-gre-words"
+page = urllib2.urlopen(crunchprep)
+soup = BeautifulSoup(page,'html.parser')
+
+list_of_words = {}
+
+#print soup.prettify()
+
+list_a = soup.findAll('strong')
+
+for item in list_a:
+	meaning = item.next_sibling
+	#if len(item)<10: 
+	#print item.text,meaning
+	if len(item.text.split()) == 1 and item.text is not None:
+		list_of_words.update({item.text:meaning.strip()})
+
+# list_p = soup.findAll('p')
+count = 0
+c = 0
+# for word in list_a:
+# 	for example in list_p:
+# 		if word in example:
+# 			list_of_words.update({word:example})
+# 			count+=1  
+
+# print count,"words added"
+
+
+for k,v in list_of_words.iteritems():
+	print k,": ",v
+	count+=1
+
+print "Number of words added: ",count
+
+with open('words.csv','wb') as f:
+    w = csv.writer(f)
+    w.writerow(['Name','(class) - Meaning'])
+    for k,v in list_of_words.iteritems():
+    	try:
+    		w.writerow([k,v])
+    		c+=1
+    	except UnicodeEncodeError:
+    		pass
+print "Words added to CSV: ",c
+    # w.writerows(list_of_words.items().encode('utf-8'))
